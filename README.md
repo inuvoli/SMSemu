@@ -1,6 +1,6 @@
 # smsemu
 
-smsemu <rom path> <region>
+smsemu [rom path] [region]
 
 region:
   0 = JP
