@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include <memory>
 
 #include "Mapper.h"
 #include "MapperSega.h"

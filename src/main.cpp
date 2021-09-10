@@ -3,7 +3,7 @@
 constexpr auto SCREEN_WIDTH = 1024;
 constexpr auto SCREEN_HEIGHT = 768;
 
-int main(int argc, char* args[])
+int main(int argc, char* argv[])
 {
     SegaEmu emu;
 
@@ -15,7 +15,7 @@ int main(int argc, char* args[])
     }
 
     //Init Emulator
-    if (!emu.InitEmulator(SEGAMASTERSYSTEM, "./ROM/Wonder Boy 3 - The Dragon's Trap (UE) [T+Swe0.7b_Metalhead].sms", UE))
+    if (!emu.InitEmulator(SEGAMASTERSYSTEM, argv[1], atoi(argv[2])))
     {
         printf("Failed to Initialize Emulator!\n");
         return 0;
